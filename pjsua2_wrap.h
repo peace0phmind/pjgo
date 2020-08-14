@@ -137,10 +137,6 @@ class SwigDirector_Call : public pj::Call
     pj::Call::onDtmfDigit(prm);
   }
   virtual void onDtmfDigit(pj::OnDtmfDigitParam &prm);
-  void _swig_upcall_onDtmfEvent(pj::OnDtmfEventParam &prm) {
-    pj::Call::onDtmfEvent(prm);
-  }
-  virtual void onDtmfEvent(pj::OnDtmfEventParam &prm);
   void _swig_upcall_onCallTransferRequest(pj::OnCallTransferRequestParam &prm) {
     pj::Call::onCallTransferRequest(prm);
   }

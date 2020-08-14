@@ -942,14 +942,6 @@ void SwigDirector_Call::onDtmfDigit(pj::OnDtmfDigitParam &prm) {
   Swig_DirectorCall_callback_onDtmfDigit_pjsua2_c42f3c36bd6001c0(go_val, swig_arg2);
 }
 
-extern "C" void Swig_DirectorCall_callback_onDtmfEvent_pjsua2_c42f3c36bd6001c0(int, pj::OnDtmfEventParam *arg2);
-void SwigDirector_Call::onDtmfEvent(pj::OnDtmfEventParam &prm) {
-  pj::OnDtmfEventParam *swig_arg2;
-  
-  swig_arg2 = (pj::OnDtmfEventParam *)&prm; 
-  Swig_DirectorCall_callback_onDtmfEvent_pjsua2_c42f3c36bd6001c0(go_val, swig_arg2);
-}
-
 extern "C" void Swig_DirectorCall_callback_onCallTransferRequest_pjsua2_c42f3c36bd6001c0(int, pj::OnCallTransferRequestParam *arg2);
 void SwigDirector_Call::onCallTransferRequest(pj::OnCallTransferRequestParam &prm) {
   pj::OnCallTransferRequestParam *swig_arg2;
@@ -5008,18 +5000,6 @@ intgo _wrap_PJMEDIA_FORMAT_MPEG4_pjsua2_c42f3c36bd6001c0() {
 }
 
 
-intgo _wrap_PJMEDIA_FORMAT_INVALID_pjsua2_c42f3c36bd6001c0() {
-  pjmedia_format_id result;
-  intgo _swig_go_result;
-  
-  
-  result = PJMEDIA_FORMAT_INVALID;
-  
-  _swig_go_result = (intgo)result; 
-  return _swig_go_result;
-}
-
-
 intgo _wrap_PJMEDIA_VID_PACKING_UNKNOWN_pjsua2_c42f3c36bd6001c0() {
   pjmedia_vid_packing result;
   intgo _swig_go_result;
@@ -5332,18 +5312,6 @@ intgo _wrap_PJSIP_SC_PROGRESS_pjsua2_c42f3c36bd6001c0() {
 }
 
 
-intgo _wrap_PJSIP_SC_EARLY_DIALOG_TERMINATED_pjsua2_c42f3c36bd6001c0() {
-  pjsip_status_code result;
-  intgo _swig_go_result;
-  
-  
-  result = PJSIP_SC_EARLY_DIALOG_TERMINATED;
-  
-  _swig_go_result = (intgo)result; 
-  return _swig_go_result;
-}
-
-
 intgo _wrap_PJSIP_SC_OK_pjsua2_c42f3c36bd6001c0() {
   pjsip_status_code result;
   intgo _swig_go_result;
@@ -5362,18 +5330,6 @@ intgo _wrap_PJSIP_SC_ACCEPTED_pjsua2_c42f3c36bd6001c0() {
   
   
   result = PJSIP_SC_ACCEPTED;
-  
-  _swig_go_result = (intgo)result; 
-  return _swig_go_result;
-}
-
-
-intgo _wrap_PJSIP_SC_NO_NOTIFICATION_pjsua2_c42f3c36bd6001c0() {
-  pjsip_status_code result;
-  intgo _swig_go_result;
-  
-  
-  result = PJSIP_SC_NO_NOTIFICATION;
   
   _swig_go_result = (intgo)result; 
   return _swig_go_result;
@@ -5548,48 +5504,12 @@ intgo _wrap_PJSIP_SC_REQUEST_TIMEOUT_pjsua2_c42f3c36bd6001c0() {
 }
 
 
-intgo _wrap_PJSIP_SC_CONFLICT_pjsua2_c42f3c36bd6001c0() {
-  pjsip_status_code result;
-  intgo _swig_go_result;
-  
-  
-  result = PJSIP_SC_CONFLICT;
-  
-  _swig_go_result = (intgo)result; 
-  return _swig_go_result;
-}
-
-
 intgo _wrap_PJSIP_SC_GONE_pjsua2_c42f3c36bd6001c0() {
   pjsip_status_code result;
   intgo _swig_go_result;
   
   
   result = PJSIP_SC_GONE;
-  
-  _swig_go_result = (intgo)result; 
-  return _swig_go_result;
-}
-
-
-intgo _wrap_PJSIP_SC_LENGTH_REQUIRED_pjsua2_c42f3c36bd6001c0() {
-  pjsip_status_code result;
-  intgo _swig_go_result;
-  
-  
-  result = PJSIP_SC_LENGTH_REQUIRED;
-  
-  _swig_go_result = (intgo)result; 
-  return _swig_go_result;
-}
-
-
-intgo _wrap_PJSIP_SC_CONDITIONAL_REQUEST_FAILED_pjsua2_c42f3c36bd6001c0() {
-  pjsip_status_code result;
-  intgo _swig_go_result;
-  
-  
-  result = PJSIP_SC_CONDITIONAL_REQUEST_FAILED;
   
   _swig_go_result = (intgo)result; 
   return _swig_go_result;
@@ -5644,18 +5564,6 @@ intgo _wrap_PJSIP_SC_UNSUPPORTED_URI_SCHEME_pjsua2_c42f3c36bd6001c0() {
 }
 
 
-intgo _wrap_PJSIP_SC_UNKNOWN_RESOURCE_PRIORITY_pjsua2_c42f3c36bd6001c0() {
-  pjsip_status_code result;
-  intgo _swig_go_result;
-  
-  
-  result = PJSIP_SC_UNKNOWN_RESOURCE_PRIORITY;
-  
-  _swig_go_result = (intgo)result; 
-  return _swig_go_result;
-}
-
-
 intgo _wrap_PJSIP_SC_BAD_EXTENSION_pjsua2_c42f3c36bd6001c0() {
   pjsip_status_code result;
   intgo _swig_go_result;
@@ -5698,150 +5606,6 @@ intgo _wrap_PJSIP_SC_INTERVAL_TOO_BRIEF_pjsua2_c42f3c36bd6001c0() {
   
   
   result = PJSIP_SC_INTERVAL_TOO_BRIEF;
-  
-  _swig_go_result = (intgo)result; 
-  return _swig_go_result;
-}
-
-
-intgo _wrap_PJSIP_SC_BAD_LOCATION_INFORMATION_pjsua2_c42f3c36bd6001c0() {
-  pjsip_status_code result;
-  intgo _swig_go_result;
-  
-  
-  result = PJSIP_SC_BAD_LOCATION_INFORMATION;
-  
-  _swig_go_result = (intgo)result; 
-  return _swig_go_result;
-}
-
-
-intgo _wrap_PJSIP_SC_USE_IDENTITY_HEADER_pjsua2_c42f3c36bd6001c0() {
-  pjsip_status_code result;
-  intgo _swig_go_result;
-  
-  
-  result = PJSIP_SC_USE_IDENTITY_HEADER;
-  
-  _swig_go_result = (intgo)result; 
-  return _swig_go_result;
-}
-
-
-intgo _wrap_PJSIP_SC_PROVIDE_REFERRER_HEADER_pjsua2_c42f3c36bd6001c0() {
-  pjsip_status_code result;
-  intgo _swig_go_result;
-  
-  
-  result = PJSIP_SC_PROVIDE_REFERRER_HEADER;
-  
-  _swig_go_result = (intgo)result; 
-  return _swig_go_result;
-}
-
-
-intgo _wrap_PJSIP_SC_FLOW_FAILED_pjsua2_c42f3c36bd6001c0() {
-  pjsip_status_code result;
-  intgo _swig_go_result;
-  
-  
-  result = PJSIP_SC_FLOW_FAILED;
-  
-  _swig_go_result = (intgo)result; 
-  return _swig_go_result;
-}
-
-
-intgo _wrap_PJSIP_SC_ANONIMITY_DISALLOWED_pjsua2_c42f3c36bd6001c0() {
-  pjsip_status_code result;
-  intgo _swig_go_result;
-  
-  
-  result = PJSIP_SC_ANONIMITY_DISALLOWED;
-  
-  _swig_go_result = (intgo)result; 
-  return _swig_go_result;
-}
-
-
-intgo _wrap_PJSIP_SC_BAD_IDENTITY_INFO_pjsua2_c42f3c36bd6001c0() {
-  pjsip_status_code result;
-  intgo _swig_go_result;
-  
-  
-  result = PJSIP_SC_BAD_IDENTITY_INFO;
-  
-  _swig_go_result = (intgo)result; 
-  return _swig_go_result;
-}
-
-
-intgo _wrap_PJSIP_SC_UNSUPPORTED_CERTIFICATE_pjsua2_c42f3c36bd6001c0() {
-  pjsip_status_code result;
-  intgo _swig_go_result;
-  
-  
-  result = PJSIP_SC_UNSUPPORTED_CERTIFICATE;
-  
-  _swig_go_result = (intgo)result; 
-  return _swig_go_result;
-}
-
-
-intgo _wrap_PJSIP_SC_INVALID_IDENTITY_HEADER_pjsua2_c42f3c36bd6001c0() {
-  pjsip_status_code result;
-  intgo _swig_go_result;
-  
-  
-  result = PJSIP_SC_INVALID_IDENTITY_HEADER;
-  
-  _swig_go_result = (intgo)result; 
-  return _swig_go_result;
-}
-
-
-intgo _wrap_PJSIP_SC_FIRST_HOP_LACKS_OUTBOUND_SUPPORT_pjsua2_c42f3c36bd6001c0() {
-  pjsip_status_code result;
-  intgo _swig_go_result;
-  
-  
-  result = PJSIP_SC_FIRST_HOP_LACKS_OUTBOUND_SUPPORT;
-  
-  _swig_go_result = (intgo)result; 
-  return _swig_go_result;
-}
-
-
-intgo _wrap_PJSIP_SC_MAX_BREADTH_EXCEEDED_pjsua2_c42f3c36bd6001c0() {
-  pjsip_status_code result;
-  intgo _swig_go_result;
-  
-  
-  result = PJSIP_SC_MAX_BREADTH_EXCEEDED;
-  
-  _swig_go_result = (intgo)result; 
-  return _swig_go_result;
-}
-
-
-intgo _wrap_PJSIP_SC_BAD_INFO_PACKAGE_pjsua2_c42f3c36bd6001c0() {
-  pjsip_status_code result;
-  intgo _swig_go_result;
-  
-  
-  result = PJSIP_SC_BAD_INFO_PACKAGE;
-  
-  _swig_go_result = (intgo)result; 
-  return _swig_go_result;
-}
-
-
-intgo _wrap_PJSIP_SC_CONSENT_NEEDED_pjsua2_c42f3c36bd6001c0() {
-  pjsip_status_code result;
-  intgo _swig_go_result;
-  
-  
-  result = PJSIP_SC_CONSENT_NEEDED;
   
   _swig_go_result = (intgo)result; 
   return _swig_go_result;
@@ -6004,18 +5768,6 @@ intgo _wrap_PJSIP_SC_UNDECIPHERABLE_pjsua2_c42f3c36bd6001c0() {
 }
 
 
-intgo _wrap_PJSIP_SC_SECURITY_AGREEMENT_NEEDED_pjsua2_c42f3c36bd6001c0() {
-  pjsip_status_code result;
-  intgo _swig_go_result;
-  
-  
-  result = PJSIP_SC_SECURITY_AGREEMENT_NEEDED;
-  
-  _swig_go_result = (intgo)result; 
-  return _swig_go_result;
-}
-
-
 intgo _wrap_PJSIP_SC_INTERNAL_SERVER_ERROR_pjsua2_c42f3c36bd6001c0() {
   pjsip_status_code result;
   intgo _swig_go_result;
@@ -6100,18 +5852,6 @@ intgo _wrap_PJSIP_SC_MESSAGE_TOO_LARGE_pjsua2_c42f3c36bd6001c0() {
 }
 
 
-intgo _wrap_PJSIP_SC_PUSH_NOTIFICATION_SERVICE_NOT_SUPPORTED_pjsua2_c42f3c36bd6001c0() {
-  pjsip_status_code result;
-  intgo _swig_go_result;
-  
-  
-  result = PJSIP_SC_PUSH_NOTIFICATION_SERVICE_NOT_SUPPORTED;
-  
-  _swig_go_result = (intgo)result; 
-  return _swig_go_result;
-}
-
-
 intgo _wrap_PJSIP_SC_PRECONDITION_FAILURE_pjsua2_c42f3c36bd6001c0() {
   pjsip_status_code result;
   intgo _swig_go_result;
@@ -6166,30 +5906,6 @@ intgo _wrap_PJSIP_SC_NOT_ACCEPTABLE_ANYWHERE_pjsua2_c42f3c36bd6001c0() {
   
   
   result = PJSIP_SC_NOT_ACCEPTABLE_ANYWHERE;
-  
-  _swig_go_result = (intgo)result; 
-  return _swig_go_result;
-}
-
-
-intgo _wrap_PJSIP_SC_UNWANTED_pjsua2_c42f3c36bd6001c0() {
-  pjsip_status_code result;
-  intgo _swig_go_result;
-  
-  
-  result = PJSIP_SC_UNWANTED;
-  
-  _swig_go_result = (intgo)result; 
-  return _swig_go_result;
-}
-
-
-intgo _wrap_PJSIP_SC_REJECTED_pjsua2_c42f3c36bd6001c0() {
-  pjsip_status_code result;
-  intgo _swig_go_result;
-  
-  
-  result = PJSIP_SC_REJECTED;
   
   _swig_go_result = (intgo)result; 
   return _swig_go_result;
@@ -34268,155 +33984,6 @@ void _wrap_delete_OnDtmfDigitParam_pjsua2_c42f3c36bd6001c0(pj::OnDtmfDigitParam 
 }
 
 
-void _wrap_OnDtmfEventParam_method_set_pjsua2_c42f3c36bd6001c0(pj::OnDtmfEventParam *_swig_go_0, intgo _swig_go_1) {
-  pj::OnDtmfEventParam *arg1 = (pj::OnDtmfEventParam *) 0 ;
-  pjsua_dtmf_method arg2 ;
-  
-  arg1 = *(pj::OnDtmfEventParam **)&_swig_go_0; 
-  arg2 = (pjsua_dtmf_method)_swig_go_1; 
-  
-  if (arg1) (arg1)->method = arg2;
-  
-}
-
-
-intgo _wrap_OnDtmfEventParam_method_get_pjsua2_c42f3c36bd6001c0(pj::OnDtmfEventParam *_swig_go_0) {
-  pj::OnDtmfEventParam *arg1 = (pj::OnDtmfEventParam *) 0 ;
-  pjsua_dtmf_method result;
-  intgo _swig_go_result;
-  
-  arg1 = *(pj::OnDtmfEventParam **)&_swig_go_0; 
-  
-  result = (pjsua_dtmf_method) ((arg1)->method);
-  _swig_go_result = (intgo)result; 
-  return _swig_go_result;
-}
-
-
-void _wrap_OnDtmfEventParam_timestamp_set_pjsua2_c42f3c36bd6001c0(pj::OnDtmfEventParam *_swig_go_0, intgo _swig_go_1) {
-  pj::OnDtmfEventParam *arg1 = (pj::OnDtmfEventParam *) 0 ;
-  unsigned int arg2 ;
-  
-  arg1 = *(pj::OnDtmfEventParam **)&_swig_go_0; 
-  arg2 = (unsigned int)_swig_go_1; 
-  
-  if (arg1) (arg1)->timestamp = arg2;
-  
-}
-
-
-intgo _wrap_OnDtmfEventParam_timestamp_get_pjsua2_c42f3c36bd6001c0(pj::OnDtmfEventParam *_swig_go_0) {
-  pj::OnDtmfEventParam *arg1 = (pj::OnDtmfEventParam *) 0 ;
-  unsigned int result;
-  intgo _swig_go_result;
-  
-  arg1 = *(pj::OnDtmfEventParam **)&_swig_go_0; 
-  
-  result = (unsigned int) ((arg1)->timestamp);
-  _swig_go_result = result; 
-  return _swig_go_result;
-}
-
-
-void _wrap_OnDtmfEventParam_digit_set_pjsua2_c42f3c36bd6001c0(pj::OnDtmfEventParam *_swig_go_0, _gostring_ _swig_go_1) {
-  pj::OnDtmfEventParam *arg1 = (pj::OnDtmfEventParam *) 0 ;
-  pj::string *arg2 = 0 ;
-  
-  arg1 = *(pj::OnDtmfEventParam **)&_swig_go_0; 
-  
-  pj::string arg2_str(_swig_go_1.p, _swig_go_1.n);
-  arg2 = &arg2_str;
-  
-  
-  if (arg1) (arg1)->digit = *arg2;
-  
-}
-
-
-_gostring_ _wrap_OnDtmfEventParam_digit_get_pjsua2_c42f3c36bd6001c0(pj::OnDtmfEventParam *_swig_go_0) {
-  pj::OnDtmfEventParam *arg1 = (pj::OnDtmfEventParam *) 0 ;
-  pj::string *result = 0 ;
-  _gostring_ _swig_go_result;
-  
-  arg1 = *(pj::OnDtmfEventParam **)&_swig_go_0; 
-  
-  result = (pj::string *) & ((arg1)->digit);
-  _swig_go_result = Swig_AllocateString((*result).data(), (*result).length()); 
-  return _swig_go_result;
-}
-
-
-void _wrap_OnDtmfEventParam_duration_set_pjsua2_c42f3c36bd6001c0(pj::OnDtmfEventParam *_swig_go_0, intgo _swig_go_1) {
-  pj::OnDtmfEventParam *arg1 = (pj::OnDtmfEventParam *) 0 ;
-  unsigned int arg2 ;
-  
-  arg1 = *(pj::OnDtmfEventParam **)&_swig_go_0; 
-  arg2 = (unsigned int)_swig_go_1; 
-  
-  if (arg1) (arg1)->duration = arg2;
-  
-}
-
-
-intgo _wrap_OnDtmfEventParam_duration_get_pjsua2_c42f3c36bd6001c0(pj::OnDtmfEventParam *_swig_go_0) {
-  pj::OnDtmfEventParam *arg1 = (pj::OnDtmfEventParam *) 0 ;
-  unsigned int result;
-  intgo _swig_go_result;
-  
-  arg1 = *(pj::OnDtmfEventParam **)&_swig_go_0; 
-  
-  result = (unsigned int) ((arg1)->duration);
-  _swig_go_result = result; 
-  return _swig_go_result;
-}
-
-
-void _wrap_OnDtmfEventParam_flags_set_pjsua2_c42f3c36bd6001c0(pj::OnDtmfEventParam *_swig_go_0, intgo _swig_go_1) {
-  pj::OnDtmfEventParam *arg1 = (pj::OnDtmfEventParam *) 0 ;
-  unsigned int arg2 ;
-  
-  arg1 = *(pj::OnDtmfEventParam **)&_swig_go_0; 
-  arg2 = (unsigned int)_swig_go_1; 
-  
-  if (arg1) (arg1)->flags = arg2;
-  
-}
-
-
-intgo _wrap_OnDtmfEventParam_flags_get_pjsua2_c42f3c36bd6001c0(pj::OnDtmfEventParam *_swig_go_0) {
-  pj::OnDtmfEventParam *arg1 = (pj::OnDtmfEventParam *) 0 ;
-  unsigned int result;
-  intgo _swig_go_result;
-  
-  arg1 = *(pj::OnDtmfEventParam **)&_swig_go_0; 
-  
-  result = (unsigned int) ((arg1)->flags);
-  _swig_go_result = result; 
-  return _swig_go_result;
-}
-
-
-pj::OnDtmfEventParam *_wrap_new_OnDtmfEventParam_pjsua2_c42f3c36bd6001c0() {
-  pj::OnDtmfEventParam *result = 0 ;
-  pj::OnDtmfEventParam *_swig_go_result;
-  
-  
-  result = (pj::OnDtmfEventParam *)new pj::OnDtmfEventParam();
-  *(pj::OnDtmfEventParam **)&_swig_go_result = (pj::OnDtmfEventParam *)result; 
-  return _swig_go_result;
-}
-
-
-void _wrap_delete_OnDtmfEventParam_pjsua2_c42f3c36bd6001c0(pj::OnDtmfEventParam *_swig_go_0) {
-  pj::OnDtmfEventParam *arg1 = (pj::OnDtmfEventParam *) 0 ;
-  
-  arg1 = *(pj::OnDtmfEventParam **)&_swig_go_0; 
-  
-  delete arg1;
-  
-}
-
-
 void _wrap_OnCallTransferRequestParam_dstUri_set_pjsua2_c42f3c36bd6001c0(pj::OnCallTransferRequestParam *_swig_go_0, _gostring_ _swig_go_1) {
   pj::OnCallTransferRequestParam *arg1 = (pj::OnCallTransferRequestParam *) 0 ;
   pj::string *arg2 = 0 ;
@@ -36188,18 +35755,6 @@ void _wrap__swig_DirectorCall_upcall_OnDtmfDigit_pjsua2_c42f3c36bd6001c0(SwigDir
 }
 
 
-void _wrap__swig_DirectorCall_upcall_OnDtmfEvent_pjsua2_c42f3c36bd6001c0(SwigDirector_Call *_swig_go_0, pj::OnDtmfEventParam *_swig_go_1) {
-  SwigDirector_Call *arg1 = (SwigDirector_Call *) 0 ;
-  pj::OnDtmfEventParam *arg2 = 0 ;
-  
-  arg1 = *(SwigDirector_Call **)&_swig_go_0; 
-  arg2 = *(pj::OnDtmfEventParam **)&_swig_go_1; 
-  
-  arg1->_swig_upcall_onDtmfEvent(*arg2);
-  
-}
-
-
 void _wrap__swig_DirectorCall_upcall_OnCallTransferRequest_pjsua2_c42f3c36bd6001c0(SwigDirector_Call *_swig_go_0, pj::OnCallTransferRequestParam *_swig_go_1) {
   SwigDirector_Call *arg1 = (SwigDirector_Call *) 0 ;
   pj::OnCallTransferRequestParam *arg2 = 0 ;
@@ -37146,18 +36701,6 @@ void _wrap_Call_onDtmfDigit_pjsua2_c42f3c36bd6001c0(pj::Call *_swig_go_0, pj::On
   arg2 = *(pj::OnDtmfDigitParam **)&_swig_go_1; 
   
   (arg1)->onDtmfDigit(*arg2);
-  
-}
-
-
-void _wrap_Call_onDtmfEvent_pjsua2_c42f3c36bd6001c0(pj::Call *_swig_go_0, pj::OnDtmfEventParam *_swig_go_1) {
-  pj::Call *arg1 = (pj::Call *) 0 ;
-  pj::OnDtmfEventParam *arg2 = 0 ;
-  
-  arg1 = *(pj::Call **)&_swig_go_0; 
-  arg2 = *(pj::OnDtmfEventParam **)&_swig_go_1; 
-  
-  (arg1)->onDtmfEvent(*arg2);
   
 }
 
@@ -40739,38 +40282,6 @@ intgo _wrap_MediaConfig_jbMax_get_pjsua2_c42f3c36bd6001c0(pj::MediaConfig *_swig
   
   result = (int) ((arg1)->jbMax);
   _swig_go_result = result; 
-  return _swig_go_result;
-}
-
-
-void _wrap_MediaConfig_jbDiscardAlgo_set_pjsua2_c42f3c36bd6001c0(pj::MediaConfig *_swig_go_0, pjmedia_jb_discard_algo *_swig_go_1) {
-  pj::MediaConfig *arg1 = (pj::MediaConfig *) 0 ;
-  pjmedia_jb_discard_algo arg2 ;
-  pjmedia_jb_discard_algo *argp2 ;
-  
-  arg1 = *(pj::MediaConfig **)&_swig_go_0; 
-  
-  argp2 = (pjmedia_jb_discard_algo *)_swig_go_1;
-  if (argp2 == NULL) {
-    _swig_gopanic("Attempt to dereference null pjmedia_jb_discard_algo");
-  }
-  arg2 = (pjmedia_jb_discard_algo)*argp2;
-  
-  
-  if (arg1) (arg1)->jbDiscardAlgo = arg2;
-  
-}
-
-
-pjmedia_jb_discard_algo *_wrap_MediaConfig_jbDiscardAlgo_get_pjsua2_c42f3c36bd6001c0(pj::MediaConfig *_swig_go_0) {
-  pj::MediaConfig *arg1 = (pj::MediaConfig *) 0 ;
-  pjmedia_jb_discard_algo result;
-  pjmedia_jb_discard_algo *_swig_go_result;
-  
-  arg1 = *(pj::MediaConfig **)&_swig_go_0; 
-  
-  result =  ((arg1)->jbDiscardAlgo);
-  *(pjmedia_jb_discard_algo **)&_swig_go_result = new pjmedia_jb_discard_algo(result); 
   return _swig_go_result;
 }
 
