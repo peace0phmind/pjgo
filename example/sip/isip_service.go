@@ -1,7 +1,7 @@
 package sip
 
 import (
-	pjsua2 "github.com/peace0phmind/pjgos"
+	pjsua2 "github.com/peace0phmind/pjgo"
 )
 
 type ISipService interface {

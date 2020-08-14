@@ -51,8 +51,8 @@ func (ss *SipService) init() {
 	ss.endpoint.LibStart()
 
 	fmt.Printf("[ SipService ] Available codecs:\n")
-	for i := 0; i < int(ss.endpoint.CodecEnum().Size()); i++ {
-		c := ss.endpoint.CodecEnum().Get(i)
+	for i := 0; i < int(ss.endpoint.CodecEnum2().Size()); i++ {
+		c := ss.endpoint.CodecEnum2().Get(i)
 		fmt.Printf("\t - %s (priority: %d)\n", c.GetCodecId(), c.GetPriority())
 	}
 
